@@ -1,4 +1,4 @@
-# Practica-2-STKLM 📄
+# 2.-STKLM 📄
 
 Segunda práctica del curso de Desarrolladora Web Junior de Bejob y Women4it.
 
