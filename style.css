@@ -4,7 +4,9 @@
   --morado: #393939;
   --blanco: white;
   --negro: black;
+  --selection: #e6ae48;
 
+  --textos-negro: black;
   --borde-negro: #00000050;
 
   /* Tipografia */
@@ -86,6 +88,7 @@ body {
 }
 .header .centrado .fa-bars {
   display: none;
+  color: var(--negro);
 }
 
 .header .centrado .nav {
@@ -125,8 +128,9 @@ body {
   width: 156px;
   position: absolute;
   right: 272px;
-  top: 25px;
+  top: 7px;
   color: rgb(148, 147, 147);
+  background-color: var(--blanco);
 }
 .shop {
   display: none;
@@ -134,8 +138,9 @@ body {
   width: 156px;
   position: absolute;
   right: 25px;
-  top: 25px;
+  top: 7px;
   color: rgb(148, 147, 147);
+  background-color: var(--blanco);
 }
 .blog {
   display: none;
@@ -143,8 +148,9 @@ body {
   width: 156px;
   position: absolute;
   right: 30px;
-  top: 25px;
+  top: 7px;
   color: rgb(148, 147, 147);
+  background-color: var(--blanco);
 }
 .portfolio {
   display: none;
@@ -152,8 +158,9 @@ body {
   width: 156px;
   position: absolute;
   right: 170px;
-  top: 25px;
+  top: 7px;
   color: rgb(148, 147, 147);
+  background-color: var(--blanco);
 }
 .li-subnav {
   padding: 0.5em;
@@ -174,6 +181,7 @@ body {
   justify-content: center;
   align-items: center;
   align-content: initial;
+  background-color: var(--blanco);
 }
 
 .main .producto .centrado {
@@ -322,11 +330,11 @@ body {
   }
   .header .centrado .fa-bars {
     display: flex;
-    color: black;
+    color: var(--negro);
   }
   .header .centrado .fa-bars {
     display: flex;
-    color: black;
+    color: var(--negro);
   }
   .header .centrado .fa-bars:hover {
     color: var(--amarillo);
@@ -374,5 +382,16 @@ body {
   }
   .main .producto .centrado .columna .img {
     margin: 0 0 2em;
+  }
+}
+@media screen and (prefers-color-scheme: dark) {
+  :root {
+    --amarillo: #e6ae48;
+    --morado: white;
+    --blanco: black;
+    --negro: white;
+
+    --textos-negro: white;
+    --borde-negro: #00000050;
   }
 }

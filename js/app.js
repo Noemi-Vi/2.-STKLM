@@ -18,32 +18,42 @@ const pages = document.querySelector(".pages");
 const shop = document.querySelector(".shop");
 const blog = document.querySelector(".blog");
 const portfolio = document.querySelector(".portfolio");
+const cabecera = document.querySelector(".centrado");
 
-itempages.addEventListener("click", () => {
-  if (pages.style.display == "flex") {
+itempages.addEventListener("mouseover", () => {
+  pages.style.display = "flex";
+});
+itemportfolio.addEventListener("mouseover", () => {
+  portfolio.style.display = "flex";
+});
+itemblog.addEventListener("mouseover", () => {
+  blog.style.display = "flex";
+});
+itemshop.addEventListener("mouseover", () => {
+  shop.style.display = "flex";
+});
+
+document.addEventListener("mouseover", (event) => {
+  if (!cabecera.contains(event.target)) {
     pages.style.display = "none";
-  } else {
-    pages.style.display = "flex";
   }
 });
-itemshop.addEventListener("click", () => {
-  if (shop.style.display == "flex") {
-    shop.style.display = "none";
-  } else {
-    shop.style.display = "flex";
-  }
-});
-itemblog.addEventListener("click", () => {
-  if (blog.style.display == "flex") {
-    blog.style.display = "none";
-  } else {
-    blog.style.display = "flex";
-  }
-});
-itemportfolio.addEventListener("click", () => {
-  if (portfolio.style.display == "flex") {
+
+document.addEventListener("mouseover", (event) => {
+  if (!cabecera.contains(event.target)) {
     portfolio.style.display = "none";
-  } else {
-    portfolio.style.display = "flex";
   }
 });
+
+document.addEventListener("mouseover", (event) => {
+  if (!cabecera.contains(event.target)) {
+    blog.style.display = "none";
+  }
+});
+
+document.addEventListener("mouseover", (event) => {
+  if (!cabecera.contains(event.target)) {
+    shop.style.display = "none";
+  }
+});
+
